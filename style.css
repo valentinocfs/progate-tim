@@ -1,4 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    background: #6D66DC;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.3);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-left {
+    /* border: 1px solid black; */
+}
+
+.header-left ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-left li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 1em;
+    color: #fff;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-left a::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.header-left a:hover::after {
+    /* background-color: red; */
+    bottom: 6px;
+}
+
+.header-left li:hover {
+    transform: scale(1.09);
+}
+
+.header-left a {
+    color: #fff;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+nav.show {
+    display: block;
+    position: fixed;
+    top: 76px;
+    left: -500px;
+    background: #6D66DCcd;
+    height: 100vh;
+    width: 70%;
+    animation: nav 0.3s ease forwards;
+}
+
+@keyframes nav {
+    to {
+        left: 0;
+    }
+}
+
+nav.show ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+}
+
+nav.show li {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.header-menu {
+    display: none;
+}
+
+.header-menu .bx {
+    font-size: 2.5em;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: -4px;
+    cursor: pointer;
+}
+
+
+.header-right {
+    /* border:  1px solid black; */
+    position: relative;
+}
+
+.header-right input {
+    border: none;
+    outline: none;
+    width: 250px;
+    padding: 10px 40px 10px 20px;
+    border-radius: 20px;
+    position: relative;
+    letter-spacing: .5px;
+    color: #666;
+    transition: all 0.2s;
+}
+
+.header-right input:hover {
+    box-shadow: 0 0 5px 1px rgba(255,255,255,0.7);
+}
+
+.header-right .bx-search {
+    color: lightskyblue;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:1000px){
+     nav ul li a {
+         font-size: 0.8em;
+     }   
+
+
+    .header-right input {
+        width: 105px;
+    }
+}
+
+@media screen and (max-width: 678px){
+    nav {
+        display: none;
+    }
+
+    .header-menu {
+        display: block;
+    }
+
+    .header-right input {
+        width: 250px;
+    }
 }
