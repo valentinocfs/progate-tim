@@ -40,7 +40,7 @@ header {
 
 header .container-header {
     width: 90%;
-    max-width: 1190px;
+    max-width: 1150px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -169,4 +169,40 @@ nav.show li {
     top: 10px;
     right: 10px;
     cursor: pointer;
+}
+
+/* HOME */
+
+.home {
+    height: calc(100vh - 76px);
+}
+
+.home-left {
+    margin-top: 200px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.home .home-left h2 {
+    font-size: 1.7em;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.home-left p {
+    font-size: .8em;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+.home-left span {
+    color: #6D66DC;
+}
+
+.home-right {
+    text-align: center;
+}
+
+.home-right img {
+    width: 300px;
 }
