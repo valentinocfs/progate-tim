@@ -25,6 +25,23 @@ li {
     margin: 0 auto;
 }
 
+.heading {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.heading h2::after {
+    content: " ";
+    display: block;
+    margin: 10px auto ;
+    border-radius: 10px;
+    width: 100px;
+    height: 3px;
+    background: #6D66DC;
+}
+
 /* header */
 
 header {
@@ -174,7 +191,7 @@ nav.show li {
 /* HOME */
 
 .home {
-    height: calc(100vh - 76px);
+    height: 100vh;
 }
 
 .home-left {
@@ -205,6 +222,7 @@ nav.show li {
     padding: 15px;
     border-radius: 5px;
     width: 50%;
+    box-shadow: 0 0 10px .5px rgba(0,0,0,0.3);
 }
 
 .home-left input {
@@ -221,6 +239,7 @@ nav.show li {
     background-color: #fff;
     color: #6D66DC;
     outline: 2px solid #6D66DC;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
 }
 
 .home-right {
@@ -229,4 +248,46 @@ nav.show li {
 
 .home-right img {
     width: 300px;
+}
+
+
+/* About */
+
+.about {
+    background-color: #f1f1ef;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .container {
+    padding: 100px 0;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+
+.about-image {
+    margin-bottom: 10px;
+}
+
+.about-image img {
+    width: 200px;
+}
+
+.about-text {
+    padding: 20px;
+}
+
+.about-text .quotes {
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
