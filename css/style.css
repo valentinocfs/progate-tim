@@ -52,6 +52,7 @@ header {
     height: 76px;
     display: flex;
     align-items: center;
+    z-index: 99;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,0.3);
 }
 
@@ -192,6 +193,7 @@ nav.show li {
 
 .home {
     height: 100vh;
+    position: relative;
 }
 
 .home-left {
@@ -250,11 +252,26 @@ nav.show li {
     width: 300px;
 }
 
+.home-wave {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    /* border: 1px solid black; */
+    width: 100%;
+    /* height: 20%; */
+}
+
+.home-wave img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
 
 /* About */
 
 .about {
-    background-color: #f1f1ef;
+    background-color: #f3f4f5;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -272,15 +289,18 @@ nav.show li {
     align-items: center;
     padding: 0 20px;
     text-align: center;
+    letter-spacing: .5px;
 }
 
 
 .about-image {
     margin-bottom: 10px;
+    
 }
 
 .about-image img {
     width: 200px;
+    border-radius: 10px;
 }
 
 .about-text {
