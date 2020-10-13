@@ -179,6 +179,7 @@ nav.show li {
 
 .home-left {
     margin-top: 200px;
+    margin-bottom: 20px;
     text-align: center;
     letter-spacing: 1px;
 }
@@ -192,11 +193,34 @@ nav.show li {
 .home-left p {
     font-size: .8em;
     margin-top: -20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .home-left span {
     color: #6D66DC;
+}
+
+.home-left .btn-home {
+    background: #6D66DC;
+    padding: 15px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.home-left input {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s  ease-in;
+}
+
+.home-left input:hover {
+    background-color: #fff;
+    color: #6D66DC;
+    outline: 2px solid #6D66DC;
 }
 
 .home-right {
