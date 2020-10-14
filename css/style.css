@@ -305,9 +305,75 @@ nav.show li {
 
 .about-text {
     padding: 20px;
+    color: #444;
 }
 
 .about-text .quotes {
-    margin-top: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    color: #555;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* SKILL */
+
+.skill {
+    background-color: #f3f4f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill .container {
+    width: 80%;
+    letter-spacing: 2px;
+}
+
+.skill-content {
+    background-color: #eee;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 0 rgba(0,0,0,0.1);
+}
+
+.progress {
+    background-color: rgba(255, 255, 255, 0.685);
+    border-radius: 20px;
+    width: 50%;
+    min-width: 100px;
+    box-shadow: .5px .5px 5px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+}
+
+.progress-done span {
+    width: 100%;
+    text-align: center;
+    color: #eee;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.progress-done {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background: linear-gradient(to left, #f2709c, #ff9472);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px -5px #f2709c, 3px 3px 3px -5px #f2709c;
+}
+
+.progress .html {
+    width: 60%;
+}
+
+.progress .css {
+    width: 50%;
+}
+
+.progress .javascript {
+    width: 30%;
 }

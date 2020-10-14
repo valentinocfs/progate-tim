@@ -98,4 +98,8 @@
     .home-wave {
         bottom: -13%;
      }
+
+    .skill .heading {
+        margin-top: 40px;
+    }
 }
