@@ -49,6 +49,28 @@
         margin-top: -100px;
         margin-bottom: 50px;
     }
+
+    .works {
+        height: 100vh;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        margin-top: 430px;
+    }
+
+    .works-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .work-card {
+        width: 50%;
+    }
+
+    .works-wave {
+        top: -450px;
+    }
 }
 
 @media screen and (max-width: 678px){
@@ -62,6 +84,10 @@
 
    .header-right input {
        width: 160px;
+   }
+
+   .works .heading {
+       margin-top: 200px;
    }
 }
 
@@ -80,6 +106,11 @@
 
     .home-right img {
         width: 600px;
+    }
+
+    .home-wave {
+        position: absolute;
+        bottom: 5px;
     }
 
     .about {
@@ -101,5 +132,16 @@
 
     .skill .heading {
         margin-top: 40px;
+    }
+
+    .works-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .work-card {
+        margin: 5px;
+        width: 25%;
     }
 }
