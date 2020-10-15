@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 16px;
+    position: relative;
 }
 
 * {
@@ -23,6 +27,7 @@ li {
 .container {
     max-width: 1150px;
     margin: 0 auto;
+    position: relative;
 }
 
 .heading {
@@ -425,4 +430,133 @@ nav.show li {
 
 .work-card p {
     font-size: 0.8em;
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.contact .container {
+    text-align: left;
+    width: 80%;
+    padding: 20px;
+}
+
+.contact .heading {
+    margin-top: 80px;
+}
+
+.contact-left {
+    font-size: 0.9em;
+}
+
+.contact-left input, textarea {
+    background-color: #e7e8e9;
+    border-radius: 3px;
+    width: 50%;
+    display: block;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 5px;
+}
+
+.contact-left input {
+    margin-bottom: 10px;
+}
+
+.contact-left .submit {
+    background-color: #6D66DC;
+    width: 150px;
+    height: 40px;
+    opacity: 0.85;
+    margin-top: 20px;
+    color: #eee;
+    font-size: 1em;
+    letter-spacing: 1px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.contact-left .submit:hover {
+   opacity: 1;
+}
+
+.contact-left input:active, textarea:active {
+    outline: none;
+}
+
+
+/* Footer */
+footer {
+    height: 200px;
+    position: relative;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+}
+
+footer .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #555;
+}
+
+.footer-left li, .footer-right li {
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+.footer-left li {
+    margin-right: 1.1em;
+    font-size: 1.7em;
+}
+
+.footer-right li {
+    margin-left: 1.1em;
+}
+
+.footer-left i:hover, .footer-right a:hover {
+    color: #6D66DC;
+}
+
+.footer-center {
+    color: #555;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+/* Scroll To Top */
+
+.scroll-top {
+    background-color: #ddd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-top i {
+    color: #6D66DC;
+    font-size: 30px;
+}
+
+.scroll-top i:hover {
+    opacity: 0.8;  
 }

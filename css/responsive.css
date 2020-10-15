@@ -52,7 +52,6 @@
 
     .works {
         height: 100vh;
-        border: 1px solid black;
         justify-content: center;
         align-items: center;
         margin-top: 430px;
@@ -71,6 +70,10 @@
     .works-wave {
         top: -450px;
     }
+
+    .social {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 678px){
@@ -83,11 +86,29 @@
    }
 
    .header-right input {
-       width: 160px;
+       width: 170px;
    }
 
    .works .heading {
        margin-top: 200px;
+   }
+
+   .contact input, textarea {
+       width: 80%;
+   }
+
+   footer .container {
+       display: block;
+       text-align: center;
+       font-size: .8em;
+   }
+
+   .footer-right li {
+        display: none;
+   }
+
+   .social {
+       display: none;
    }
 }
 
@@ -143,5 +164,46 @@
     .work-card {
         margin: 5px;
         width: 25%;
+    }
+
+    .social {
+        position: fixed;
+        left: 0.5%;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+    }
+    
+    .social ul::before {
+        content: "|";
+        color: #555;
+        position: relative;
+        bottom: 20px;
+        height: 30px;
+        width: 2px;
+        text-align: center;
+    }
+    
+    .social ul::after {
+        content: "| ";
+        color: #555;
+        height: 30px;
+        width: 2px;
+    }
+    
+    .social li {
+        margin-bottom: 20px;
+    }
+    
+    .social li a {
+        color: #555;
+        font-size: 1.5em;
+    }
+
+    .social li a:hover {
+        color: #6D66DC;
     }
 }
